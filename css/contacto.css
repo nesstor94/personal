@@ -1,0 +1,241 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Sofia Sans', sans-serif;
+    font-weight: bolder;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    position: fixed;
+        z-index: 10;
+    box-shadow: 0px 14px 24px -3px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 14px 24px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 14px 24px -3px rgba(0,0,0,0.75);
+}
+
+.modal__fade{
+    z-index: 500;
+}
+
+.navbar{
+    height: 150px;
+    background-color: black;
+    display: flex;
+    position: fixed;
+    width: 100%;
+}
+
+.footer{
+    background-image: url(../images/fondo-mk.jpg);
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__text{
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+}
+
+.footer__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 150px;
+}
+
+.footer__containerOne,
+.footer__containerDos,
+.footer__containerTres{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 33%;
+}
+
+.footer__img,
+.footer__logo{
+    height: 100%;
+    padding: 5px;
+}
+
+.contacto{
+    padding-top: 170px;
+    color: white;
+    background-image: url(../images/fondo.png);
+}
+
+.formulario__interior{
+    background:black;
+    padding: 20px;
+    margin: 0 10px;
+    border-radius: 10px;
+}
+
+.info__title{
+    font-weight: bolder;
+}
+
+.info__titleOne,
+.bi{
+    padding-left: 4px;
+    color: orange;
+}
+
+
+.info__img{
+    display: none;
+}
+
+.mapa{
+    display: none;
+}
+
+.info__text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.info__cont{
+    display: flex;
+    flex-direction: row;
+}
+
+.info__container_txt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario__name,
+.formulario__email,
+.formulario__tel,
+.formulario__comment{
+    background-color: orange;
+    border: 1px transparent;
+    margin: 1px;
+    border-radius: 5px;
+    width: 80%;
+    resize: none;
+}
+
+.formulario__name::placeholder,
+.formulario__email::placeholder,
+.formulario__tel::placeholder,
+.formulario__comment::placeholder{
+    color: black;
+}
+
+.formulario__btn{
+    background:orange;
+    color: black;
+    border: 1px transparent;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.formulario__name:hover,
+.formulario__email:hover,
+.formulario__tel:hover,
+.formulario__comment:hover{
+    color: white;
+    background-color: #6f42c1;
+    border: 1px transparent;
+    margin: 1px;
+    border-radius: 5px;
+}
+
+.info__line{
+    border: 2px solid orange;
+    width: 80%;
+}
+
+.modal__subtitle{
+    color: orange;
+}
+.modal__fade{
+    z-index: 500;
+}
+
+.acceso__btn{
+    background: orange;
+    border: 1px transparent;
+    border-radius: 5px;
+}
+
+.footer__audio{
+    display: none;
+}
+
+@media(min-width:768px){
+    .mapa{
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    .container__mapa{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+@media(min-width:992px){
+    .footer__audio{
+        display: flex;
+    }
+
+    .footer__container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer__img,
+    .footer__logo{
+        width: 100px;
+        height: 100px;
+    }
+
+    .footer__containerDos{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .mapa{
+        width: 90%;
+    }
+
+    .formulario__interior{
+        width: 90%;
+    }
+
+    .formulario__name,
+    .formulario__email,
+    .formulario__tel,
+    .formulario__comment{
+        width: 100%;
+        margin-bottom: 3px;
+    }
+
+    .formulario__name::placeholder,
+    .formulario__email::placeholder,
+    .formulario__tel::placeholder,
+    .formulario__comment::placeholder{
+        font-size: 25px;
+    }
+
+    .info__datos{
+        font-size: 20px;
+    }
+}

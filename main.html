@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author"  content="Nestor Robles">
+    <title>Mortal Kombat</title>
+    <link rel="icon" href="./images/logo-mortal.png">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@200&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+</head>
+<body>
+
+    <!---HEADER-->
+    <div class="header">
+        <nav id="navbar-example2" class="navbar px-3">
+            <a class="navbar-brand text-light" href="./main.html">Mortal Kombat</a>
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link text-warning" href="./pages/contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-none d-md-flex text-warning" href="./pages/acceso.html">Acceso</a>
+                </li>
+                <li> 
+                    <button type="button" class=" btn d-none d-md-flex btn-transparent text-warning fw-bolder" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        Registro
+                    </button>
+
+                </li>
+                <li class="nav-item dropdown lista">
+                    <a class="nav-link d-md-none dropdown-toggle text-warning" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                        <i class="bi bi-list"></i>
+                    </a>
+                    <ul class="dropdown-menu bg-black">
+                        <li> 
+                            <button type="button" class=" btn btn-transparent text-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                Registro
+                            </button>
+
+                        </li>
+                        <li> 
+                            <a href="./pages/acceso.html">
+                                <button type="button" class="btn bg-transparent text-light">Acceso</button>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-warning" href="./pages/sobre.html">Developer</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+
+    <!---MAIN-->
+    <div class="main">
+
+        <!--CARROUSEL-->
+        <div class="main__container">
+            <div id="carouselExampleFade" class="carousel pt-3 slide carousel-fade">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./images/imagen1.png" class="d-block w-100" alt="imagen-mortalkombat">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/imagen2.png" class="d-block w-100" alt="imagen-mortalkombat">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/imagen3.png" class="d-block w-100" alt=".imagen-mortalkombat">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <div class="main__columns">
+
+            <!--CARDS-->
+            <div class="main__columnaUno">
+                <div class="card ">
+                    <img src="./images/imagen1.png" class="card-img-top" alt="imagen-principal">
+                    <div class="card-body">
+                      <h5 class="card-title text-warning">Historia</h5>
+                      <p class="card-text">Tú debes ayudar a la Princesa Kitana y liberar a la Tierra de las tropas de Shao Kahn.</p>
+                      <a href="./pages/historia.html" class="btn btn-warning">Ver más...</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./images/imagen2.png" class="card-img-top" alt="imagen-luchadores">
+                    <div class="card-body">
+                      <h5 class="card-title text-warning">Personajes</h5>
+                      <p class="card-text"> UMK3 tiene todos los luchadores de los 3 Mortal Kombat.</p>
+                      <a href="./pages/personajes.html" class="btn btn-warning">Ver más...</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./images/escenario.png" class="card-img-top" alt="imagen-escenario">
+                    <div class="card-body">
+                      <h5 class="card-title text-warning">Escenarios</h5>
+                      <p class="card-text">Compuesto por 17 distintos escenarios de batallas.</p>
+                      <a href="./pages/escenarios.html" class="btn btn-warning">Ver más...</a>
+                    </div>
+                </div>
+                
+                <br>
+                <!--PAGINACION-->
+                <div class="container__paginacion">
+                    <ul class="pagination">
+                        <li><a href="./pages/error.html">«</a></li>
+                        <li><a href="./pages/error.html">1</a></li>
+                        <li><a class="active" href="./pages/error.html">2</a></li>
+                        <li><a href="./pages/error.html">3</a></li>
+                        <li><a href="./pages/error.html">»</a></li>
+                      </ul>                                       
+                </div>
+
+            </div>
+            <div class="main__columnaDos">
+
+                <!--BUSCADOR/ LISTA/ PUBLICIDAD --->
+                <div class="main__container-form">
+                    <form class="main__form">
+                        <input class="main__form-input" type="search" name="search_info" placeholder="Más info...">
+                        <button class="main__container-btn">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </form>
+                </div>
+                <div class="main__container-list">
+                    <ul class="main__list">
+                        <li class="main__elemento">
+                            <a class="main__lista-item" href="./pages/error.html">Combos</a>
+                        </li>
+                        <li class="main__elemento">
+                            <a class="main__lista-item" href="./pages/error.html">Poderes</a>
+                        </li>
+                        <li class="main__elemento">
+                            <a class="main__lista-item" href="./pages/error.html">Fatality</a>
+                        </li>
+                        <li class="main__elemento">
+                            <a class="main__lista-item" href="./pages/error.html">Friendship</a>
+                        </li>
+                        <li class="main__elemento">
+                            <a class="main__lista-item" href="./pages/error.html">Babality</a>
+                        </li>
+                        <li class="main__elemento">
+                            <a class="main__lista-item" href="./pages/error.html">Brutality</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main__container-publi">
+                    <img class="main__publi" src="./images/publi.jpg" alt="imagen-publicidad">
+                </div>
+
+                <div class="main__container-publidos">
+                    <img class="main__publidos" src="./images/publidos.jpg" alt="imagen-publicidad">
+                </div>
+            </div>
+        </div>
+
+
+        <br>
+    </div>
+     <!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content bg-black">
+          <div class="modal-header">
+            <h1 class="modal-title text-warning fs-5" id="staticBackdropLabel">Nuevo Registro:</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h2 class="modal__subtitle">Ingrese los siguientes datos:</h2>
+             <form>
+                  <input class="modal__email" placeholder=" Email" type="email" name="correo" required>
+                  <input class="modal__usuario" placeholder=" Usuario" type="text" name="usuario" required>
+                  <input class="modal__contra" placeholder=" Contraseña" type="password" name="codigo" required>
+                  <input class="modal__contraDos" placeholder=" Repetir Contraseña" type="password" name="codigoDos" required>
+                  <input class="acceso__btn" type="submit" value="Enviar">            
+             </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-warning boton__modal" data-bs-dismiss="modal">Listo</button>
+          </div>
+        </div>
+    </div>
+</div>
+
+
+    <!---FOOTER-->
+    <footer class="footer">
+        <div class="footer__text">
+            <h6>© 2022 MortalKombat. Todos los derechos reservados.</h6>
+        </div>
+        <div class="footer__container">
+            <div class="footer__containerOne">
+                <img class="footer__img" src="./images/logo-mortal.png" alt="Logo-mortalKombat">
+            </div>
+            <div class="footer__containerDos">
+                    <a class="footer__logo"  href="./pages/error.html"><img class="footer__img" src="./images/face.png" alt="logo-facebook"></a>
+                    <a class="footer__logo" href="./pages/error.html"><img class="footer__img"  src="./images/insta.png" alt="logo-instagram"></a>
+            </div>
+            <div class="footer__containerTres">
+            </div>
+            <audio class="footer__audio" src="./audio/ultimate-mortal-kombat-3-arcade-music-choose-your-destiny.mp3" autoplay controls loop ></audio>
+        </div>
+    </footer>
+</body>
+</html>
